@@ -137,32 +137,58 @@
 
 //The Recipe Card *** need to finish ***
 
-/*  
-    var recipe = function(title, servings, ingredients) {
+    var Recipe = function(title, servings, ingredients) {
         this._title = title;
         this._servings = servings;
         this._ingredients = ingredients;
-    {
-            console.log(this._title + ' Serves: ' + this._servings + ' Ingredients: ');
-            
-    var ingredients = [[3,'Avocados'] ,[1,'Lime'], ['1 Tspn','Salt'], ['1/2 Cup','Onion'], ['3 Tblspn','Cilantro'],[2,'Diced Tomatoes'], ['1 Tspn','Garlic'], ['1 Pinch', 'Ground Pepper']];
-*/
-        
-//The Reading List ***need to finish ***
+    }
+    Recipe.prototype.displayMethod = function() {
+        console.log(this._title + ' Serves: ' + this._servings + ' Ingredients: ' + this._ingredients);        
+    };
+    
+    var ingredients = [[3,'Avocados'] ,[1,'Lime'], [1, 'Tspn','Salt'], ['1/2 Cup','Onion'], ['3 Tblspn','Cilantro'],[2,'Diced Tomatoes'], ['1 Tspn','Garlic'], ['1 Pinch', 'Ground Pepper']];
+    
+    var favoriteRecipe = new Recipe('Guacamole', 4, ingredients);
+    favoriteRecipe.displayMethod();
 
-/*    
-    var book = function(title, author, alreadyRead) {
+        
+//The Reading List
+        
+    // create book constructor
+    
+   /*
+   var Book = function(title, author, alreadyRead) { //creates book Objects to put into our Array aka our list of books 
         this._title = title;
         this._author = author;
-        this._alreadyRread = alreadyRead;
-
-        console.log( ' ' + this._title + ' by ' + this._author + ' ');
-        //need quotes around book title
+        this._alreadyRead = alreadyRead;
     }
-*/
-
-
-
+    // create the books using the constructor
+    var book1 = new Book('The Hobbit', 'J.R.R. Tolkien', false);
+    var book2 = new Book('The Lord of the Rings', 'J.R.R. Tolkien', false);
+    var book3 = new Book('The World is Flat', 'Thomas L. Friedman', true);
+    var book4 = new Book('1984', 'George Orwell', true);
+    var book5 = new Book('Lines and Shadows', 'Joseph Wambaugh', true);
+    // place the books in an array
+    var books = [book1, book2, book3, book4, book5];
+    // loop thru the array - display contents of ea obj
+    for (var i = 0; i < books.length; i++) { 
+        if (books[i]._alreadyRead) {
+        console.log('You already read "' + books[i]._title + '" by ' + books[i]._author)
+        } else {
+        console.log('You still need to read "' + books[i]._title + '" by ' + books[i]._author);
+        } 
+    };
+    */
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
 
 
 
