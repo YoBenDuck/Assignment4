@@ -33,9 +33,7 @@
     var chimp = new Animal('ape');
 */ 
 
-
 //Part6
-
 /* 
     function Animal(type, breed, color, height, length) {
         this._type = type;
@@ -50,7 +48,6 @@
 
 
 //Part7
-
 /*
     function Animal(type, breed, color, height, length) {
         this.type = type; //keyword this is the object
@@ -64,12 +61,10 @@
         console.log(' ');
     }
     var myAnimal = new Animal('Lizard', 'Komodo', 'Green', '6"', '12"');
-    
     var mojo = new Animal('Dog', 'Dogo', 'White', '27"', '3\'');
 */
 
 //Part8
-
 /*
     function Animal(type, breed, color, height, length) {
         this.type = type; 
@@ -78,7 +73,6 @@
         this.height = height;
         this.length = length;
     }
-
     Animal.prototype.speak = function() {
         if (this.type == 'Dog') {
            return 'The ' + this.color + ' dog is barking!'; 
@@ -87,8 +81,7 @@
            return 'The ' + this.color + ' cat is meowing!'; 
         } 
         return 'Crickets chirping';
-    }
-        
+    }  
     var myAnimal = new Animal('Lizard', 'Komodo', 'Green', '6"', '12"');
     var mojo = new Animal('Dog', 'Dogo', 'White', '27"', '3\'');
     console.log(myAnimal.speak());
@@ -135,28 +128,32 @@
     console.log(str.findWords('chuck'));
 */
 
-//The Recipe Card *** need to finish ***
-
+//The Recipe Card 
+/*
     var Recipe = function(title, servings, ingredients) {
         this._title = title;
         this._servings = servings;
         this._ingredients = ingredients;
     }
     Recipe.prototype.displayMethod = function() {
-        console.log(this._title + ' Serves: ' + this._servings + ' Ingredients: ' + this._ingredients);        
+        console.log(this._title);
+        console.log('Serves: ' + this._servings);
+        console.log('Ingredients: ');        
+        for (var i in this._ingredients) {
+            console.log('-' + this._ingredients[i][0] + ' ' + this._ingredients[i][1]); 
+        }
     };
     
-    var ingredients = [[3,'Avocados'] ,[1,'Lime'], [1, 'Tspn','Salt'], ['1/2 Cup','Onion'], ['3 Tblspn','Cilantro'],[2,'Diced Tomatoes'], ['1 Tspn','Garlic'], ['1 Pinch', 'Ground Pepper']];
+    var ingredients = [['3','Avocados'], ['1','Lime'], ['1 Tspn','Salt'], ['1/2 Cup','Onion'], ['3 Tblspn','Cilantro'],['2', 'Diced Tomatoes'], ['1 Tspn','Garlic'], ['1 Pinch', 'Ground Pepper']];
     
     var favoriteRecipe = new Recipe('Guacamole', 4, ingredients);
     favoriteRecipe.displayMethod();
+*/
 
         
-//The Reading List
-        
+//The Reading List     
     // create book constructor
-    
-   /*
+/*
    var Book = function(title, author, alreadyRead) { //creates book Objects to put into our Array aka our list of books 
         this._title = title;
         this._author = author;
@@ -178,18 +175,6 @@
         console.log('You still need to read "' + books[i]._title + '" by ' + books[i]._author);
         } 
     };
-    */
+*/
     
   
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-
-
