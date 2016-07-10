@@ -107,7 +107,6 @@
         }
         this.speak = function() { 
             return 'The ' + checkType() + ' has made a noise.'
-            
         }
     } //end Animal constructor
         
@@ -169,7 +168,7 @@
     var books = [book1, book2, book3, book4, book5];
     // loop thru the array - display contents of ea obj
     for (var i = 0; i < books.length; i++) { 
-        if (books[i]._alreadyRead) {
+        if (books[i]._alreadyRead) { //do not need == true already absolute
         console.log('You already read "' + books[i]._title + '" by ' + books[i]._author)
         } else {
         console.log('You still need to read "' + books[i]._title + '" by ' + books[i]._author);
